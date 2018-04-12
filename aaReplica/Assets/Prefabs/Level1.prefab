@@ -40,7 +40,6 @@ GameObject:
   - component: {fileID: 114913193056460340}
   - component: {fileID: 114273922199442948}
   - component: {fileID: 114806587124779430}
-  - component: {fileID: 111118293180810068}
   m_Layer: 5
   m_Name: Level1
   m_TagString: Untagged
@@ -48,20 +47,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!111 &111118293180810068
-Animation:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1755351690150268}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!114 &114273922199442948
 MonoBehaviour:
   m_ObjectHideFlags: 1

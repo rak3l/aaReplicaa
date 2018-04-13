@@ -880,6 +880,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1560741306 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114098124387389096, guid: 7f0980e925b107b4aafd117a105a1b0b,
+    type: 2}
+  m_PrefabInternal: {fileID: 2056759172}
+  m_Script: {fileID: 11500000, guid: 9b43d21c424c524478f45c9ec79da394, type: 3}
 --- !u!1001 &1647099798
 Prefab:
   m_ObjectHideFlags: 0
@@ -1157,7 +1163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 151a2b1652255c1468c7997404780c63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fader: {fileID: 114098124387389096, guid: 7f0980e925b107b4aafd117a105a1b0b, type: 2}
+  fader: {fileID: 1560741306}
 --- !u!1001 &2056759172
 Prefab:
   m_ObjectHideFlags: 0

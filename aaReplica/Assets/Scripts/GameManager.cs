@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour {
     public Rotator rotator;
     public Spawner spawner;
 
-    
+    public Animator animator;
+
     #endregion 
 
     #region methods
@@ -20,6 +21,11 @@ public class GameManager : MonoBehaviour {
     {
         if (gameHasEnded)
             return;
+
+        rotator.enabled = false;
+        spawner.enabled = false;
+
+        animator.SetTrigger("EndGame");
 
         gameHasEnded = true;
 

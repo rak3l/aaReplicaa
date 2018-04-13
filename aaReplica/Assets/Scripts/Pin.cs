@@ -28,6 +28,9 @@ public class Pin : MonoBehaviour
         {
             transform.SetParent(col.transform);
             isPinned = true;
+        } else if (col.tag == "Pin")
+        {
+            FindObjectOfType<GameManager>().EndGame();
         }
     }
 

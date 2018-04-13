@@ -17,7 +17,7 @@ public class SceneFader : MonoBehaviour{
     public void FadeTo (string scene)
     //to scene that i want it to fade to 
     {
-        StartCoroutine(FadeOut());
+        StartCoroutine(FadeOut(scene));
     }
 
     IEnumerator FadeIn ()

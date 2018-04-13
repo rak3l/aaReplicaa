@@ -17,7 +17,7 @@ public class NumberOfPins : MonoBehaviour {
 
     void Start()
     {
-        PinCount = 20;
+        PinCount = 16;
     }
 
     void Update()

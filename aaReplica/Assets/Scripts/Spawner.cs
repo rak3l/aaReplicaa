@@ -7,6 +7,7 @@ public class Spawner : MonoBehaviour {
     #region properties
 
     public GameObject pinPrefab;
+    public int maxItems = 16;
 
     #endregion
 
@@ -14,7 +15,7 @@ public class Spawner : MonoBehaviour {
 
     void Update()
     {
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Jump") && maxItems-- > 0)
         {
             SpawnPin();
         }

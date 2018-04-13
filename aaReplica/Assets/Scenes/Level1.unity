@@ -393,6 +393,7 @@ GameObject:
   - component: {fileID: 1754943764}
   - component: {fileID: 1754943766}
   - component: {fileID: 1754943765}
+  - component: {fileID: 1754943767}
   m_Layer: 5
   m_Name: NumberOfPins
   m_TagString: Untagged
@@ -430,7 +431,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.58431375, g: 0.58431375, b: 0.58431375, a: 1}
+  m_Color: {r: 0.94117653, g: 0.9333334, b: 0.882353, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -450,13 +451,25 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 20
+  m_Text: 10
 --- !u!222 &1754943766
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1754943763}
+--- !u!114 &1754943767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1754943763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc2c8b26731ac8f4dbd55636b41baf3e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1754943765}
 --- !u!1 &1846428421
 GameObject:
   m_ObjectHideFlags: 0
@@ -588,6 +601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pinPrefab: {fileID: 1439355004992450, guid: 76376439e56b40d4c89e77f5baa7de59, type: 2}
+  maxItems: 10
 --- !u!212 &1854586265
 SpriteRenderer:
   m_ObjectHideFlags: 0

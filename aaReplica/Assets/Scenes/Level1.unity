@@ -209,7 +209,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotator: {fileID: 1846428424}
   spawner: {fileID: 1854586262}
-  animator: {fileID: 0}
+  animator: {fileID: 563039873}
 --- !u!95 &563039873
 Animator:
   serializedVersion: 3

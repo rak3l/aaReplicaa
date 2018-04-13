@@ -6,8 +6,14 @@ using UnityEngine;
 
 public class SceneFader : MonoBehaviour{
 
+    #region properties 
+
     public Image img;
     public AnimationCurve curve;
+
+    #endregion
+
+    #region methods
 
     void Start()
     {
@@ -47,6 +53,8 @@ public class SceneFader : MonoBehaviour{
 
         SceneManager.LoadScene(scene);
     }
+
+    #endregion
 
 
 }

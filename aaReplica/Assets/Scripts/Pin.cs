@@ -27,13 +27,13 @@ public class Pin : MonoBehaviour
         if (col.tag == "Rotator")
         {
             transform.SetParent(col.transform);
-            col.GetComponent<Rotator>().speed += 5f;
             NumberOfPins.PinCount--;
             isPinned = true;
         } else if (col.tag == "Pin")
         {
             FindObjectOfType<GameManager>().EndGame();
         }
+ 
     }
 
     #endregion

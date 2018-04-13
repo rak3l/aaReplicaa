@@ -341,7 +341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotator: {fileID: 1846428424}
-  spawner: {fileID: 0}
+  spawner: {fileID: 1854586262}
   animator: {fileID: 563039873}
 --- !u!95 &563039873
 Animator:
@@ -898,9 +898,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1754943763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4be1acdc01f9124390dc8f5abdfa275, type: 3}
+  m_Script: {fileID: 11500000, guid: bc2c8b26731ac8f4dbd55636b41baf3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  text: {fileID: 1754943765}
 --- !u!1 &1846428421
 GameObject:
   m_ObjectHideFlags: 0
@@ -1074,11 +1075,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1854586261}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c461c005307cf62439ef8bd2e5ba4445, type: 3}
+  m_Script: {fileID: 11500000, guid: 260236eb7a439e642bd5cfdad7c7d250, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pinPrefab: {fileID: 1439355004992450, guid: 76376439e56b40d4c89e77f5baa7de59, type: 2}
-  maxItems: 16
+  maxItems: 10
 --- !u!212 &1854586265
 SpriteRenderer:
   m_ObjectHideFlags: 0

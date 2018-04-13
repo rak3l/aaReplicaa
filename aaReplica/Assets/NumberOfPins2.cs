@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NumberOfPins : MonoBehaviour {
+public class NumberOfPins2 : MonoBehaviour
+{
 
     #region properties
 
-    public static int PinCount;
+    public static int PinCount2;
 
-    public Text text;
+    public Text text2;
 
     #endregion
 
@@ -17,12 +18,12 @@ public class NumberOfPins : MonoBehaviour {
 
     void Start()
     {
-        PinCount = 10;
+        PinCount2 = 16;
     }
 
     void Update()
     {
-        text.text = PinCount.ToString();
+        text2.text = PinCount2.ToString();
 
     }
     #endregion

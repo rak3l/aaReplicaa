@@ -4,27 +4,26 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour {
 
-    #region properties 
+    #region properties
 
     public GameObject pinPrefab;
-    public int maxItems = 10;
 
     #endregion
 
-    #region method
+    #region methods
 
     void Update()
     {
-        if (Input.GetButtonDown("Jump") && maxItems-- > 0)
+        if(Input.GetButtonDown("Jump"))
         {
             SpawnPin();
         }
     }
 
-    void SpawnPin()
+    void SpawnPin ()
     {
         Instantiate(pinPrefab, transform.position, transform.rotation);
     }
-
+    
     #endregion
 }

@@ -14,12 +14,6 @@ public class NumberOfPins : MonoBehaviour {
     #endregion
 
     #region methods
-
-    void Start()
-    {
-        PinCount = 10;
-    }
-
     void Update()
     {
         text.text = PinCount.ToString();

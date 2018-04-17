@@ -8,10 +8,15 @@ public class Spawner : MonoBehaviour {
 
     public GameObject pinPrefab;
     public int maxItems = 10;
+    public ActionType type;
 
     #endregion
 
     #region methods
+    void Awake()
+    {
+        NumberOfPins.PinCount = maxItems;
+    }
 
     void Update()
     {
@@ -23,7 +28,8 @@ public class Spawner : MonoBehaviour {
 
     void SpawnPin ()
     {
-        Instantiate(pinPrefab, transform.position, transform.rotation);
+        GameObject pin = Instantiate(pinPrefab, transform.position, transform.rotation);
+        pin.GetComponent<Pin>().type = type;
     }
     
     #endregion

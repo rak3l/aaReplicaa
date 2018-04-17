@@ -26,9 +26,17 @@ public class GameManager : MonoBehaviour {
         rotator.enabled = false;
         spawner.enabled = false;
 
-        animator.SetTrigger("EndGame");
-
         gameHasEnded = true;
+
+        if (NumberOfPins.PinCount == 0)
+        {
+            // win - change level
+            Debug.Log("you win");
+        }
+        else
+        {
+            animator.SetTrigger("EndGame");
+        }
 
     }
 

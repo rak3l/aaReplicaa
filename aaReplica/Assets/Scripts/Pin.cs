@@ -12,10 +12,10 @@ public class Pin : MonoBehaviour
     public float speed = 20f;
     public Rigidbody2D rb;
 
+    public ActionType type;
     #endregion
 
     #region methods
-
     void Update()
     {
         if(!isPinned)
@@ -28,6 +28,7 @@ public class Pin : MonoBehaviour
         {
             transform.SetParent(col.transform);
             NumberOfPins.PinCount--;
+            col.GetComponent<Rotator>().DoAction(type);
             isPinned = true;
         } else if (col.tag == "Pin")
         {

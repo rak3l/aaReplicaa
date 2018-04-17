@@ -30,8 +30,8 @@ public class GameManager : MonoBehaviour {
 
         if (NumberOfPins.PinCount == 0)
         {
-            // win - change level
-            Debug.Log("you win");
+            animator.SetTrigger("WinGame");
+            StartCoroutine(NextLevel());
         }
         else
         {
@@ -39,6 +39,13 @@ public class GameManager : MonoBehaviour {
         }
 
     }
+
+    public IEnumerator NextLevel()
+    {
+        yield return new WaitForSeconds(1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex+1);
+    }
+
 
     public void RestartLevel()
     {

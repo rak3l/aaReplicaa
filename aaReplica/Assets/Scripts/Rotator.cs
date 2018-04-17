@@ -4,7 +4,7 @@ using UnityEngine;
 
 public enum ActionType
 {
-    ChangeSpeed, ChangeDirection
+    None, ChangeSpeed, ChangeDirection
 }
 
 public class Rotator : MonoBehaviour {
@@ -30,7 +30,7 @@ public class Rotator : MonoBehaviour {
                 break;
 
             case ActionType.ChangeSpeed:
-                speed += 10;
+                speed += 15;
                 break;
         }
 

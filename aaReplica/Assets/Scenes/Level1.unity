@@ -602,6 +602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pinPrefab: {fileID: 1439355004992450, guid: 76376439e56b40d4c89e77f5baa7de59, type: 2}
   maxItems: 10
+  type: 1
 --- !u!212 &1854586265
 SpriteRenderer:
   m_ObjectHideFlags: 0
